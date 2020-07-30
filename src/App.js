@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Home from "./components/Home"
+import Button from "@material-ui/core/Button"
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+return(
+  <div>
+        <div>
+            <Button variant="contained" style={{justifyContent:'center'}} color="primary" onClick={Home}>home</Button>
+            <Button variant="contained" style={{justifyContent:'center'}} color="primary">Productivity Tips</Button>
+            <Button variant="contained" style={{justifyContent:'center'}} color="primary">Popular Videos</Button>
+            <Button variant="contained" style={{justifyContent:'center'}}  color="primary">Techniques</Button>
+            </div>
+    <Home />
+  </div>
+)
 }
+
 
 export default App;
